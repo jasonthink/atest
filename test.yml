@@ -1,0 +1,10 @@
+---
+- name: test pvs
+  hosts: localhost
+  vars:
+    testvar: 'this is a test'
+
+  tasks:
+  - name: test out
+    ansible.builtin.debug:
+      var: testvar
